@@ -1,0 +1,7 @@
+<img src=<%= @meme.link %> />
+
+<% @meme.tags.each do |tag| %>
+    <p><%= tag.name %></p>
+<% end %>
+
+<%= link_to 'Back to homepage', memes_path %>
